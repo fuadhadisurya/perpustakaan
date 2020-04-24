@@ -73,7 +73,7 @@ move_uploaded_file($foto_temp,'image/'.$foto_name);
 
   //Query Insert data
   $query="INSERT buku (id,judul,penulis,kategori,penerbit,tahun_terbit,nama_file,ukuran,direktori)VALUES 
-  ('','$judul','$penulis','$kategori','$penerbit','$thn','$foto_name','$foto_size','$foto_temp')";
+  (null,'$judul','$penulis','$kategori','$penerbit','$thn','$foto_name','$foto_size','$foto_temp')";
   mysqli_query($conn,$query);
   if(mysqli_affected_rows($conn) > 0)
   {

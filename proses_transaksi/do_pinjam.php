@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
 
    //Query Insert data
   $query="INSERT transaksi (id,nim,nama,id_buku,judul_buku,penulis,id_buku2,judul_buku2,penulis2,tanggal_pinjam,batas_akhir,keterangan)VALUES 
-  ('','$nim','$nama','$id','$judul','$penulis','$id2','$judul2','$penulis2','$tglp','$ba','$status')";
+  (null,'$nim','$nama','$id','$judul','$penulis','$id2','$judul2','$penulis2','$tglp','$ba','$status')";
     // var_dump($query);
   $result = mysqli_query($conn,$query);
   if(mysqli_affected_rows($conn) > 0)

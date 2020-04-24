@@ -78,7 +78,7 @@ move_uploaded_file($foto_temp,'image/'.$foto_name);
 
   //Query Insert data
   $query="INSERT INTO anggota (id,nama,nim,kelas,kontak,email,domisili,alamat,tempat_lahir,tanggal_lahir,jenis_kelamin,nama_file,ukuran,direktori)VALUES 
-  ('','$nama','$nim','$kelas','$kontak','$email','$domisili','$alamat','$tl','$tgl','$jk','$foto_name','$foto_size','$foto_temp')";
+  (null,'$nama','$nim','$kelas','$kontak','$email','$domisili','$alamat','$tl','$tgl','$jk','$foto_name','$foto_size','$foto_temp')";
   mysqli_query($conn,$query);
   if(mysqli_affected_rows($conn) > 0)
   {
